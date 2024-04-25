@@ -1,0 +1,65 @@
+### SIGN UP a NEW USER
+
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email":"asdf1000@asdf.com",
+    "password": "asdfasdf"
+}
+
+### GET THE CURRENT USER
+
+GET http://localhost:3000/auth/whoami
+
+### SIGN OUT
+
+POST http://localhost:3000/auth/signout
+
+### SIGN IN USER
+
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email":"asdf10@asdf.com",
+    "password": "asdfasdf"
+}
+
+    ### "password": "asdfasdf"
+
+### FIND USER WITH GIVEN ID
+
+GET http://localhost:3000/auth/3
+
+
+### FIND ALL USERS WITH GIVEN QUERY
+
+GET http://localhost:3000/auth?email=asdf@asdf.com
+
+
+### DELETE USER WITH GIVEN ID
+
+DELETE http://localhost:3000/auth/1432
+
+
+
+### UPDATE USER WITH GIVEN ID
+
+PATCH http://localhost:3000/auth/25435
+Content-Type: application/json
+
+{
+    "email":"aaaaa@aaaaa.com"
+}
+
+
+### Set a color
+
+Get http://localhost:3000/auth/colors/redsdhjashdas
+
+
+### Get the color
+
+Get http://localhost:3000/auth/colors
+
